@@ -71,6 +71,170 @@
 </script>
 
 <style>
+/* ── HEADER & FOOTER STYLES ONLY (no existing styles touched) ── */
+
+.site-header {
+  background: #0d0d14;
+  border-bottom: 1px solid #1e1e2e;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.header-inner {
+  max-width: 900px;
+  margin: auto;
+  padding: 0 20px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-logo {
+  font-size: 1.15em;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.header-logo span { color: #a855f7; }
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.header-nav a {
+  color: #9ca3af;
+  text-decoration: none;
+  padding: 6px 13px;
+  border-radius: 5px;
+  font-size: 0.92em;
+  transition: color 0.2s, background 0.2s;
+}
+
+.header-nav a:hover {
+  color: #ffffff;
+  background: #1a1a28;
+}
+
+.header-nav a.nav-cta {
+  background: linear-gradient(90deg, #7c3aed, #a855f7);
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.header-nav a.nav-cta:hover {
+  opacity: 0.88;
+}
+
+.hamburger-btn {
+  display: none;
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  background: #0d0d14;
+  border-top: 1px solid #1e1e2e;
+  padding: 8px 20px 14px;
+}
+
+.mobile-menu a {
+  color: #9ca3af;
+  text-decoration: none;
+  padding: 11px 0;
+  border-bottom: 1px solid #1a1a28;
+  font-size: 0.95em;
+}
+
+.mobile-menu a:last-child { border-bottom: none; }
+.mobile-menu.open { display: flex; }
+
+@media (max-width: 600px) {
+  .header-nav { display: none; }
+  .hamburger-btn { display: block; }
+}
+
+/* ── FOOTER ── */
+
+.site-footer {
+  background: #0d0d14;
+  border-top: 1px solid #1e1e2e;
+  margin-top: 50px;
+}
+
+.footer-inner {
+  max-width: 900px;
+  margin: auto;
+  padding: 36px 20px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 36px;
+}
+
+@media (max-width: 620px) {
+  .footer-inner { grid-template-columns: 1fr; gap: 24px; }
+}
+
+.footer-brand-name {
+  font-size: 1.05em;
+  font-weight: bold;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.footer-brand-name span { color: #a855f7; }
+
+.footer-brand-desc {
+  color: #6b7280;
+  font-size: 0.88em;
+  line-height: 1.7;
+}
+
+.footer-col-title {
+  color: #c084fc;
+  font-size: 0.78em;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.footer-col a {
+  display: block;
+  color: #6b7280;
+  text-decoration: none;
+  font-size: 0.88em;
+  margin-bottom: 8px;
+  transition: color 0.2s;
+}
+
+.footer-col a:hover { color: #e4e4e4; }
+
+.footer-bottom {
+  border-top: 1px solid #1e1e2e;
+  text-align: center;
+  padding: 14px 20px;
+  color: #4b5563;
+  font-size: 0.8em;
+}
+
+/* ── ALL ORIGINAL STYLES BELOW — UNTOUCHED ── */
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -169,6 +333,25 @@ ul li {
 
 <body>
 
+<!-- ── HEADER ── -->
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="header-logo">🔒 <span>Blue Lock</span> Manga</a>
+    <nav class="header-nav">
+      <a href="index.html">Home</a>
+      <a href="blog/index.html">Blog</a>
+      <a href="https://the-blue-lock.com/" target="_blank" class="nav-cta">Read Manga</a>
+    </nav>
+    <button class="hamburger-btn" onclick="toggleNav()">☰</button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="blog/index.html">Blog</a>
+    <a href="https://the-blue-lock.com/" target="_blank">Read Manga</a>
+  </div>
+</header>
+
+<!-- ── ORIGINAL CONTENT — NOT CHANGED ── -->
 <div class="container">
 
   <h1>Read Blue Lock Manga</h1>
@@ -313,8 +496,41 @@ ul li {
   </div>
 
 </div>
+<!-- ── END ORIGINAL CONTENT ── -->
+
+<!-- ── FOOTER ── -->
+<footer class="site-footer">
+  <div class="footer-inner">
+
+    <div>
+      <div class="footer-brand-name">🔒 <span>Blue Lock</span> Manga</div>
+      <p class="footer-brand-desc">Your complete guide to Blue Lock manga — story arcs, characters, chapters, and the latest updates.</p>
+    </div>
+
+    <div class="footer-col">
+      <div class="footer-col-title">Quick Links</div>
+      <a href="index.html">Home</a>
+      <a href="blog/index.html">Blog</a>
+      <a href="https://the-blue-lock.com/" target="_blank">Read Manga</a>
+    </div>
+
+    <div class="footer-col">
+      <div class="footer-col-title">Blog Categories</div>
+      <a href="blog/index.html#characters">Characters</a>
+      <a href="blog/index.html#story-arcs">Story Arcs</a>
+      <a href="blog/index.html#power-system">Philosophy</a>
+    </div>
+
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Blue Lock Manga Guide. All rights reserved.</p>
+  </div>
+</footer>
 
 <script>
+function toggleNav() {
+  document.getElementById('mobileMenu').classList.toggle('open');
+}
 var acc = document.getElementsByClassName("accordion");
 for (var i = 0; i < acc.length; i++) {
   acc[i].onclick = function() {
