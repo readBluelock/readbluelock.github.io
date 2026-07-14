@@ -12,7 +12,7 @@
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://the-blue-lock.com/">
 
-<!-- FAQ SCHEMA -->
+<!-- ── ORIGINAL FAQ SCHEMA — NOT TOUCHED ── -->
 <script type="application/ld+json">
 {
  "@context": "https://schema.org",
@@ -67,6 +67,72 @@
    }
   }
  ]
+}
+</script>
+
+<!-- ── NEW SCHEMAS ADDED BELOW — WebSite, Organization, WebPage, Breadcrumb ── -->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Blue Lock Manga",
+  "url": "https://readbluelock.github.io/",
+  "description": "Complete guide to Blue Lock manga — story arcs, characters, chapters and latest updates.",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://readbluelock.github.io/blog/?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Blue Lock Manga Guide",
+  "url": "https://readbluelock.github.io/",
+  "sameAs": [
+    "https://the-blue-lock.com/"
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Read Blue Lock Manga Online - Latest Chapters 2026",
+  "description": "Read Blue Lock manga online free in English. Latest chapters 2026 updated weekly. Explore story arcs, top characters and football action.",
+  "url": "https://readbluelock.github.io/",
+  "inLanguage": "en",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Blue Lock Manga",
+    "url": "https://readbluelock.github.io/"
+  },
+  "about": {
+    "@type": "Thing",
+    "name": "Blue Lock Manga",
+    "description": "A Japanese sports manga series about a football survival program designed to create Japan's ultimate striker."
+  },
+  "dateModified": "2026-06-01"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://readbluelock.github.io/"
+    }
+  ]
 }
 </script>
 
@@ -231,6 +297,180 @@
   padding: 14px 20px;
   color: #4b5563;
   font-size: 0.8em;
+}
+
+/* ── CAROUSEL STYLES (NEW) ── */
+
+.carousel-section {
+  margin: 30px 0;
+}
+
+.carousel-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.carousel-heading h2 {
+  color: #a855f7;
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.carousel-heading a.view-all {
+  font-size: 0.88em;
+  color: #c084fc;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 6px 16px;
+  border: 1px solid #7c3aed;
+  border-radius: 20px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.carousel-heading a.view-all:hover {
+  background: #7c3aed;
+  color: #fff;
+}
+
+.carousel-outer {
+  position: relative;
+}
+
+.carousel-track-wrap {
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 18px;
+  transition: transform 0.4s ease;
+  will-change: transform;
+}
+
+.c-card {
+  background: #111118;
+  border: 1px solid #1e1e2e;
+  border-radius: 10px;
+  padding: 22px;
+  min-width: calc(33.333% - 12px);
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  box-sizing: border-box;
+  transition: box-shadow 0.2s, border-color 0.2s;
+}
+
+.c-card:hover {
+  box-shadow: 0 0 16px rgba(168,85,247,0.3);
+  border-color: #7c3aed;
+}
+
+.c-card .c-tag {
+  font-size: 0.72em;
+  background: #1e1e2e;
+  color: #c084fc;
+  padding: 3px 10px;
+  border-radius: 20px;
+  display: inline-block;
+  margin-bottom: 11px;
+  width: fit-content;
+}
+
+.c-card h3 {
+  font-size: 0.97em;
+  color: #ffffff;
+  line-height: 1.5;
+  margin-bottom: 9px;
+}
+
+.c-card .c-excerpt {
+  font-size: 0.84em;
+  color: #9ca3af;
+  line-height: 1.65;
+  flex: 1;
+  margin-bottom: 14px;
+}
+
+.c-card .c-meta {
+  font-size: 0.74em;
+  color: #4b5563;
+  margin-bottom: 12px;
+}
+
+.c-card .c-read {
+  font-size: 0.84em;
+  color: #c084fc;
+  font-weight: bold;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #1e1e2e;
+  border: 1px solid #2d2d3e;
+  color: #ffffff;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  font-size: 1.1em;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  transition: background 0.2s;
+}
+
+.carousel-btn:hover { background: #7c3aed; }
+.carousel-btn.prev { left: -18px; }
+.carousel-btn.next { right: -18px; }
+.carousel-btn:disabled { opacity: 0.3; cursor: default; }
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 18px;
+}
+
+.carousel-dots .dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #1e1e2e;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+  border: none;
+}
+
+.carousel-dots .dot.active {
+  background: #a855f7;
+  transform: scale(1.3);
+}
+
+.carousel-loading {
+  text-align: center;
+  padding: 40px 20px;
+  color: #6b7280;
+  font-size: 0.9em;
+}
+
+@media (max-width: 720px) {
+  .c-card { min-width: calc(50% - 9px); }
+  .carousel-btn.prev { left: -12px; }
+  .carousel-btn.next { right: -12px; }
+}
+
+@media (max-width: 480px) {
+  .c-card { min-width: 100%; }
+  .carousel-btn { display: none; }
 }
 
 /* ── ALL ORIGINAL STYLES BELOW — UNTOUCHED ── */
@@ -449,6 +689,24 @@ ul li {
     <p>Compared to series like Haikyuu!! and Ao Ashi, Blue Lock takes a more intense and individual focused approach. This difference has helped it attract a wide audience and maintain strong engagement across chapters and volumes.</p>
   </div>
 
+  <!-- ── CAROUSEL ADDED HERE — between Why It Stands Out and FAQs ── -->
+  <div class="carousel-section">
+    <div class="carousel-heading">
+      <h2>📰 Latest from the Blog</h2>
+      <a href="blog/index.html" class="view-all">View All Posts →</a>
+    </div>
+    <div class="carousel-outer">
+      <button class="carousel-btn prev" id="carouselPrev" onclick="carouselMove(-1)">&#8249;</button>
+      <div class="carousel-track-wrap">
+        <div class="carousel-track" id="carouselTrack">
+          <div class="carousel-loading">Loading latest posts...</div>
+        </div>
+      </div>
+      <button class="carousel-btn next" id="carouselNext" onclick="carouselMove(1)">&#8250;</button>
+    </div>
+    <div class="carousel-dots" id="carouselDots"></div>
+  </div>
+
   <!-- FAQs -->
   <div class="card">
     <h2>Frequently Asked Questions</h2>
@@ -528,6 +786,103 @@ ul li {
 </footer>
 
 <script>
+/* ── CAROUSEL JS (NEW) ── */
+var carouselPosts   = [];
+var carouselIndex   = 0;
+var carouselVisible = 3;
+
+fetch('blog/posts.json')
+  .then(function(r) { return r.json(); })
+  .then(function(posts) {
+    carouselPosts = posts;
+    buildCarousel(posts);
+    updateCarouselButtons();
+  })
+  .catch(function() {
+    var t = document.getElementById('carouselTrack');
+    if (t) t.innerHTML = '<div class="carousel-loading">Could not load posts.</div>';
+  });
+
+function buildCarousel(posts) {
+  var track = document.getElementById('carouselTrack');
+  var dots  = document.getElementById('carouselDots');
+  if (!track || !dots) return;
+
+  carouselVisible = window.innerWidth <= 480 ? 1
+                  : window.innerWidth <= 720 ? 2
+                  : 3;
+
+  track.innerHTML = '';
+  dots.innerHTML  = '';
+
+  posts.forEach(function(post) {
+    var card = document.createElement('a');
+    card.className = 'c-card';
+    card.href = 'blog/' + post.slug;
+    card.innerHTML =
+      '<span class="c-tag">' + (post.categoryIcon || '') + ' ' + post.category + '</span>' +
+      '<h3>' + post.title + '</h3>' +
+      '<p class="c-excerpt">' + post.excerpt + '</p>' +
+      '<div class="c-meta">&#128197; ' + formatCarouselDate(post.date) + ' &middot; &#9201; ' + post.readTime + '</div>' +
+      '<span class="c-read">Read Post &rarr;</span>';
+    track.appendChild(card);
+  });
+
+  var pages = Math.ceil(posts.length / carouselVisible);
+  for (var i = 0; i < pages; i++) {
+    var dot = document.createElement('button');
+    dot.className = 'dot' + (i === 0 ? ' active' : '');
+    dot.setAttribute('data-index', i);
+    (function(idx) {
+      dot.onclick = function() { carouselGoTo(idx * carouselVisible); };
+    })(i);
+    dots.appendChild(dot);
+  }
+
+  carouselGoTo(0);
+}
+
+function carouselMove(dir) {
+  carouselGoTo(carouselIndex + (dir * carouselVisible));
+}
+
+function carouselGoTo(index) {
+  var total = carouselPosts.length;
+  carouselIndex = Math.max(0, Math.min(index, total - carouselVisible));
+  var track = document.getElementById('carouselTrack');
+  if (!track || !track.children[0]) return;
+  var cardWidth = track.children[0].offsetWidth + 18;
+  track.style.transform = 'translateX(-' + (carouselIndex * cardWidth) + 'px)';
+  updateCarouselButtons();
+  updateCarouselDots();
+}
+
+function updateCarouselButtons() {
+  var p = document.getElementById('carouselPrev');
+  var n = document.getElementById('carouselNext');
+  if (!p || !n) return;
+  p.disabled = carouselIndex <= 0;
+  n.disabled = carouselIndex >= carouselPosts.length - carouselVisible;
+}
+
+function updateCarouselDots() {
+  var dots = document.querySelectorAll('#carouselDots .dot');
+  var activePage = Math.floor(carouselIndex / carouselVisible);
+  dots.forEach(function(dot, i) {
+    dot.classList.toggle('active', i === activePage);
+  });
+}
+
+function formatCarouselDate(dateStr) {
+  var d = new Date(dateStr);
+  return d.toLocaleDateString('en-US', { year: 'numeric', month: 'long' });
+}
+
+window.addEventListener('resize', function() {
+  if (carouselPosts.length > 0) buildCarousel(carouselPosts);
+});
+
+/* ── ORIGINAL JS — NOT TOUCHED ── */
 function toggleNav() {
   document.getElementById('mobileMenu').classList.toggle('open');
 }
