@@ -1,34 +1,14 @@
 [
   {
-  "title": "Blue Lock vs Tomb Raider King – Manga vs Manhwa Comparison 2026",
-  "slug": "bluelock-vs-tomb-raider-king.html",
-  "category": "Comparisons",
-  "categoryIcon": "⚔️",
-  "excerpt": "Blue Lock vs Tomb Raider King: a full manga vs manhwa comparison covering story structure, protagonists, power systems, themes and pacing — plus a clear verdict on which to read first in 2026.",
-  "date": "2026-06-20",
-  "readTime": "9 min read",
-  "featured": false
-},
-  {
-  "title": "Blue Lock vs Gachiakuta – Which Survival Manga Is Better in 2026?",
-  "slug": "bluelock-vs-gachiakuta.html",
-  "category": "Comparisons",
-  "categoryIcon": "⚔️",
-  "excerpt": "Both series drop protagonists into brutal survival systems in the same magazine — but the tone, power systems and emotional stakes are completely different. Full 2026 comparison with verdict.",
-  "date": "2026-06-15",
-  "readTime": "9 min read",
-  "featured": false
-},
-  {
-  "title": "Blue Lock vs Boruto 2 Blue Vortex – Which Manga Is Worth Reading in 2026?",
-  "slug": "bluelock-vs-boruto.html",
-  "category": "Comparisons",
-  "categoryIcon": "⚔️",
-  "excerpt": "Blue Lock built its audience from scratch. Boruto 2 Blue Vortex inherited millions of Naruto readers. A full 2026 comparison on story, protagonists, power systems and which deserves your time.",
-  "date": "2026-06-08",
-  "readTime": "9 min read",
-  "featured": false
-},
+    "title": "Blue Lock vs Tomb Raider King – Manga vs Manhwa Comparison 2026",
+    "slug": "bluelock-vs-tomb-raider-king.html",
+    "category": "Comparisons",
+    "categoryIcon": "⚔️",
+    "excerpt": "Blue Lock vs Tomb Raider King: a full manga vs manhwa comparison covering story structure, protagonists, power systems, themes and pacing — plus a clear verdict on which to read first in 2026.",
+    "date": "2026-06-20",
+    "readTime": "9 min read",
+    "featured": false
+  },
   {
     "title": "Blue Lock vs Hunter x Hunter – Full Manga Comparison 2026",
     "slug": "bluelock-vs-hxh.html",
@@ -40,23 +20,23 @@
     "featured": true
   },
   {
-    "title": "Blue Lock vs Gachiakuta – Two Survival Series Compared",
+    "title": "Blue Lock vs Gachiakuta – Which Survival Manga Is Better in 2026?",
     "slug": "bluelock-vs-gachiakuta.html",
     "category": "Comparisons",
     "categoryIcon": "⚔️",
-    "excerpt": "Both series throw their protagonists into brutal elimination systems, but the tone, themes, and stakes are completely different. Which survival manga delivers more?",
-    "date": "2026-06-05",
-    "readTime": "7 min read",
+    "excerpt": "Both series drop protagonists into brutal survival systems in the same magazine — but the tone, power systems and emotional stakes are completely different. Full 2026 comparison with verdict.",
+    "date": "2026-06-15",
+    "readTime": "9 min read",
     "featured": false
   },
   {
-    "title": "Blue Lock vs Boruto – Which Next-Gen Series Is Worth Reading?",
+    "title": "Blue Lock vs Boruto 2 Blue Vortex – Which Manga Is Worth Reading in 2026?",
     "slug": "bluelock-vs-boruto.html",
     "category": "Comparisons",
     "categoryIcon": "⚔️",
-    "excerpt": "Boruto carries the weight of Naruto's legacy. Blue Lock builds its own identity from scratch. A detailed breakdown of which series justifies the investment in 2026.",
+    "excerpt": "Blue Lock built its audience from scratch. Boruto 2 Blue Vortex inherited millions of Naruto readers. A full 2026 comparison on story, protagonists, power systems and which deserves your time.",
     "date": "2026-06-08",
-    "readTime": "7 min read",
+    "readTime": "9 min read",
     "featured": false
   },
   {
@@ -128,5 +108,5 @@
     "date": "2026-06-04",
     "readTime": "6 min read",
     "featured": false
-  },
+  }
 ]
